@@ -25,6 +25,7 @@ end
 	line(another_deli)
       end
     end
+<<<<<<< HEAD
    def line(katz_deli)
         if (katz_deli.length <1)
          puts "The line is currently empty."
@@ -38,6 +39,18 @@ end
             end
           end
           puts listNames
+=======
+        def line(katz_deli)
+        if (katz_deli.length <1)
+         puts "The line is currently empty."
+        else 
+          listNames = ""
+          katz_deli.each_with_index do |name,index|
+          listNames = listNames + index.to_s + "." + name +", "
+          
+          end
+          return listNames
+>>>>>>> 59954d9bf20fc8f9ea7c854529fea23fe4736454
         end
     end
   end
